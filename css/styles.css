@@ -1,0 +1,160 @@
+/* Globals and iPad Contraints*/
+*{box-sizing:border-box;
+    margin:0;
+    padding: 0;
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    user-select:none;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow:hidden;
+}
+
+/* --- Local Fonts --- */
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* iPad Constraints (10th Gen)*/
+.presentationFrame {
+    Width: 1180px;
+    Height: 820px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Splash Page Header */
+.splashHeader {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo{
+    background-color: white;
+    padding: 47px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brandLogo {
+    height: 134px;
+    width: auto;
+    object-fit: contain;
+}
+
+.tagline {
+    background-color: #1f63ad;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.tagline p {
+    font-size: 42px;
+    font-weight: normal;
+}
+
+/* Button Section */
+
+.stageWrapper {
+  flex: 1;
+  background-color: white; /* White bands on top and bottom */
+  padding: 16px 0;
+  display: flex;
+}
+
+.hubStage {
+    flex: 1;
+    background-color: #b4b4b4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.cardGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+    max-width: 1080px
+}
+
+.hubBtn {
+    background-color: white;
+    border-radius: 13px;
+    height: 328px;
+    width: 328px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(11, 46, 71, 0.22);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.hubBtn:active {
+    transform: scale(0.95);
+    box-shadow: 0 px 10px rgba(11, 46, 71, 0.22);
+}
+
+.iconBox {
+    height: 164px;
+    width: 164px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.iconBox img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.hubBtn h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    color: #0b2e47;
+}
+
+/*footer*/
+.splashFooter {
+    width: 100%;
+    background-color: #0a2b47;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.splashFooter p {
+    font-size: 42px;
+    font-weight: normal;
+}
