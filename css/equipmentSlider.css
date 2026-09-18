@@ -1,0 +1,254 @@
+/* --- FULL-STAGE SLIDER --- */
+.slideTrack {
+    width: 1180px;
+    height: 1640px; /* Exactly 2x 820px full screens */
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+    will-change: transform;
+}
+
+.slideTrack.show-matrix {
+    transform: translateY(-820px);
+}
+
+.fullScreenPanel {
+    width: 1180px;
+    height: 820px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+/* --- HEADER (Inside View 1) --- */
+.equipHeader {
+    width: 100%;
+    height: 94px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 32px;
+    border-bottom: 2px solid #b4b4b4;
+    flex-shrink: 0;
+}
+
+.brandLogoSmall {
+    height: 56px;
+    width: auto;
+    object-fit: contain;
+}
+
+.equipTitle {
+    text-align: right;
+}
+
+.equipTitle h1 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #0b2e47;
+    line-height: 1.2;
+}
+
+.equipTitle p {
+    font-size: 18px;
+    color: #1f63ad;
+    font-weight: bold;
+    margin-top: 3px;
+}
+
+/* --- VIEW 1: MACHINE CARDS --- */
+.cardStage {
+    flex: 1;
+    background-color: #b4b4b4;
+    padding: 24px 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    align-items: stretch;
+}
+
+.machineCard {
+    background-color: white;
+    border-radius: 13px;
+    box-shadow: 0 10px 20px rgba(11, 46, 71, 0.22);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    padding: 18px 12px;
+    transition: transform 0.2s ease;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.machineCard:active {
+    transform: scale(0.97);
+}
+
+.machineImgWrap {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 0;
+}
+
+.machineImgWrap img {
+    max-height: 100%;
+    max-width: 90%;
+    object-fit: contain;
+}
+
+.machineMeta {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.machineBadge {
+    border: 2px solid #0b2e47;
+    border-radius: 7px;
+    color: #0b2e47;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 14px;
+    margin-bottom: 6px;
+    text-align: center;
+}
+
+.machineSub {
+    font-size: 15px;
+    font-weight: bold;
+    color: #4e4f4f;
+    text-align: center;
+}
+
+/* --- VIEW 2: FULL-PAGE SPEC MATRIX --- */
+.tableStage {
+    flex: 1;
+    background-color: white;
+    padding: 24px 32px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.specMatrix {
+    width: 100%;
+    height: 100%;
+    border-collapse: separate;
+    border-spacing: 12px 0; /* Gap between columns */
+    table-layout: fixed;
+}
+
+/* Base Cells */
+.specMatrix th,
+.specMatrix td {
+    text-align: center;
+    padding: 10px 14px;
+    font-size: 18px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+/* Feature Label Column (Left) */
+.specMatrix .colFeature {
+    width: 20%;
+}
+
+.specMatrix td.cellLabel {
+    text-align: left;
+    color: #1a2a3a;
+    padding-left: 16px;
+    border-radius: 6px; /* Smooth rounded badge on the feature label */
+}
+
+/* Top Column Headers */
+.specMatrix th.colHeader {
+    background-color: #1f63ad;
+    color: #ffffff;
+    border-radius: 6px 6px 0 0; /* Top rounding preserved only on header caps */
+    font-size: 20px;
+    height: 52px;
+    line-height: 1.2;
+}
+
+/* White Fill (Default row columns) */
+.specMatrix tbody tr td:not(.cellLabel) {
+    background-color: White;
+}
+
+/* Shaded Row Band (Straight across, perfectly sharp corners) */
+.specMatrix tr.shadedRow td.cellLabel {
+    background-color: #dcddde;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+.specMatrix tr.shadedRow td:not(.cellLabel) {
+    background-color: #ddeffb;
+}
+
+/* Ensure no rogue corner radiuses on the right or middle of any data cells */
+.specMatrix tbody tr td:last-child {
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+/* Bottom Accent Anchor */
+.specMatrix tr.tableBaseRow td {
+    background-color: transparent !important;
+    padding: 0;
+    height: 10px;
+}
+
+.specMatrix .colBaseAccent {
+    background-color: #1f63ad;
+    height: 8px;
+    border-radius: 0 0 6px 6px; /* Bottom rounding preserved only on footer caps */
+    width: 100%;
+}
+
+/* --- NAVIGATION BARS --- */
+.sliderNav {
+    height: 88px; /* Matches .navFooter height */
+    padding: 0 24px;
+    flex-shrink: 0;
+}
+
+.navSlideBtn {
+    background: none;
+    border: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 6px;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.navSlideBtn:active {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.navSlideBtn .navIcon {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    vertical-align: middle;
+    flex-shrink: 0;
+    object-fit: contain;
+    /* Uncomment below if your exported SVG is black and needs to be white */
+    /* filter: brightness(0) invert(1); */
+}

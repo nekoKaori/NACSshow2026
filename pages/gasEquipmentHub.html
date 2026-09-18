@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Excel Tire Gauge">
+    <title>Gas Station / C-Store Equipment</title>
+    <!-- Base styles first, slider overrides second -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/equipmentSlider.css">
+</head>
+
+<body>
+    <!-- iPad Presentation Container (Locked Landscape 1180x820) -->
+    <main class="presentationFrame">
+
+    <!-- Full-Frame Sliding Track -->
+        <div class="slideTrack" id="slideTrack">
+
+            <!-- VIEW 1: HEADER + CARDS + NAV -->
+            <section class="fullScreenPanel" id="panelMachines">
+                
+                <!-- Top Header (Inside Panel 1 so it slides away) -->
+                <header class="equipHeader">
+                    <div class="equipLogo">
+                        <img src="../images/logoETG.svg" alt="Excel Tire Gauge Logo" class="brandLogoSmall">
+                    </div>
+                    <div class="equipTitle">
+                        <h1>Gas Station/C-Store Equipment</h1>
+                        <p>Tap a Machine to Learn More</p>
+                    </div>
+                </header>   
+
+                <!-- 4 Machine Cards -->
+                <div class="cardStage">
+                    <a href="scwm23.html" class="machineCard">
+                        <div class="machineImgWrap">
+                            <img src="../images/photoSCWM23.png" alt="SCWM-23">
+                        </div>
+                        <div class="machineMeta">
+                            <span class="machineBadge">SCWM-23</span>
+                            <span class="machineSub">Wall Mount</span>
+                        </div>
+                    </a>
+
+                    <a href="sc05ss.html" class="machineCard">
+                        <div class="machineImgWrap">
+                            <img src="../images/photoSC05SS.png" alt="SC05-SS">
+                        </div>
+                        <div class="machineMeta">
+                            <span class="machineBadge">SC05-SS</span>
+                            <span class="machineSub">Cashless</span>
+                        </div>
+                    </a>
+
+                    <a href="sc05ssKiosk.html" class="machineCard">
+                        <div class="machineImgWrap">
+                            <img src="../images/photoSC05SSKiosk.png" alt="SC05-SS Kiosk">
+                        </div>
+                        <div class="machineMeta">
+                            <span class="machineBadge">SC05-SS | Kiosk</span>
+                            <span class="machineSub">Hybrid</span>
+                        </div>
+                    </a>
+
+                    <a href="sc09ss.html" class="machineCard">
+                        <div class="machineImgWrap">
+                            <img src="../images/photoSC09SS.png" alt="SC09-SS">
+                        </div>
+                        <div class="machineMeta">
+                            <span class="machineBadge">SC09-SS</span>
+                            <span class="machineSub">Coin & Cashless</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Top Navigation Footer -->
+                <footer class="navFooter sliderNav">
+                    <a href="gasHub.html" class="navBtn">
+                        <img src="../images/iconBack.svg" alt="Back Icon" class="navIcon">
+                        <span>Back</span>
+                    </a>
+
+                    <button type="button" class="navSlideBtn" onclick="slideDown()">
+                        <img src="../images/iconDown.svg" alt="Down Arrow Icon" class="navIcon">
+                        <span>Product Comparisons</span>
+                    </button>
+
+                    <a href="../index.html" class="navBtn">
+                        <img src="../images/iconHome.svg" alt="Home Icon" class="navIcon">
+                        <span>HOME</span>
+                    </a>
+                </footer>
+            </section>
+
+            <!-- VIEW 2: FULL-HEIGHT COMPARISON TABLE + NAV -->
+            <section class="fullScreenPanel" id="panelTable">
+                
+                <!-- Full Table Area -->
+                <div class="tableStage">
+                    <table class="specMatrix">
+                        <thead>
+                            <tr>
+                                <th class="colFeature"></th>
+                                <th class="colHeader">SCWM-23</th>
+                                <th class="colHeader">SC05-SS</th>
+                                <th class="colHeader">SC05-SS | Kiosk</th>
+                                <th class="colHeader">SC09-SS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="shadedRow">
+                                <td class="cellLabel">Unit Type</td>
+                                <td>Wall Mount</td>
+                                <td>Free Standing</td>
+                                <td>Free Standing</td>
+                                <td>Free Standing</td>
+                            </tr>
+                            <tr>
+                                <td class="cellLabel">Offered as Pay/Free</td>
+                                <td>Pay or Free</td>
+                                <td>Pay or Free</td>
+                                <td>Pay & Free</td>
+                                <td>Pay</td>
+                            </tr>
+                            <tr class="shadedRow">
+                                <td class="cellLabel">Coin Acceptability</td>
+                                <td>No</td>
+                                <td>No</td>
+                                <td>No</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td class="cellLabel">Credit Card / Cashless Compatible</td>
+                                <td>Yes</td>
+                                <td>Yes</td>
+                                <td>Yes</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr class="shadedRow">
+                                <td class="cellLabel">Vacuum Compatible</td>
+                                <td>No</td>
+                                <td>Yes</td>
+                                <td>No</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td class="cellLabel">Warranty</td>
+                                <td>1 yr</td>
+                                <td>1 yr</td>
+                                <td>1 yr</td>
+                                <td>1 yr</td>
+                            </tr>
+                            <tr class="tableBaseRow">
+                                <td></td>
+                                <td><div class="colBaseAccent"></div></td>
+                                <td><div class="colBaseAccent"></div></td>
+                                <td><div class="colBaseAccent"></div></td>
+                                <td><div class="colBaseAccent"></div></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Bottom Navigation Footer -->
+                <footer class="navFooter sliderNav">
+                    <a href="gasHub.html" class="navBtn">
+                        <img src="../images/iconBack.svg" alt="Back Icon" class="navIcon">
+                        <span>Back</span>
+                    </a>
+
+                    <button type="button" class="navSlideBtn" onclick="slideUp()">
+                        <img src="../images/iconUp.svg" alt="Up Arrow Icon" class="navIcon">
+                        <span>Explore Individual Machines</span>
+                    </button>
+
+                    <a href="../index.html" class="navBtn">
+                        <img src="../images/iconHome.svg" alt="Home Icon" class="navIcon">
+                        <span>HOME</span>
+                    </a>
+                </footer>
+            </section>
+
+        </div>
+
+    </main>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
