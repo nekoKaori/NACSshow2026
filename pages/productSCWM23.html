@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Excel Tire Gauge">
+    <title>SCWM-23 Wall Mount</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/productDetail.css">
+</head>
+
+<body>
+    <main class="presentationFrame">
+        
+        <!-- Header (Permanent 94px) -->
+        <header class="productHeader">
+            <div class="headerLogo">
+                <img src="../images/logoETG.svg" alt="Excel Tire Gauge Logo" class="brandLogoSmall">
+            </div>
+            <div class="headerTitle">
+                <h1>SCWM-23</h1>
+                <p>Wall Mount</p>
+            </div>
+        </header>
+
+        <!-- Stage Frame with 16px Top/Bottom Margins -->
+        <div class="stageWrapper">
+            <section class="productStage">
+                
+                <!-- Left Column: Feature Buttons -->
+                <nav class="featureNav" aria-label="Product Features">
+                    <button type="button" class="featureBtn active" data-feature="digitalAir">
+                        DIGITAL AIR MACHINE
+                    </button>
+                    <button type="button" class="featureBtn" data-feature="smallerFootprint">
+                        SMALLER FOOT PRINT
+                    </button>
+                    <button type="button" class="featureBtn" data-feature="stainlessSteel">
+                        STAINLESS STEEL
+                    </button>
+                    <button type="button" class="featureBtn" data-feature="cashlessPayments">
+                        CASHLESS PAYMENTS
+                    </button>
+                    <button type="button" class="featureBtn" data-feature="heater">
+                        HEATER
+                    </button>
+                    <button type="button" class="featureBtn" data-feature="water">
+                        WATER
+                    </button>
+                    <button type="button" class="featureBtn" data-feature="colorOptions">
+                        COLOR OPTIONS
+                    </button>
+                    <button type="button" class="featureBtn" data-feature="showPrice">
+                        SHOW PRICE
+                    </button>
+                </nav>
+
+                <!-- Center Column: Dynamic Machine Display -->
+                <div class="machineDisplayArea">
+                    <img id="mainMachineImg" 
+                         src="../images/scwm23-free.png" 
+                         alt="SCWM-23 Wall Mount Air Machine">
+                </div>
+
+                <!-- Right Column: Dynamic Blurb Card -->
+                <aside class="blurbCard" id="blurbCard">
+                    <div class="blurbHeader">
+                        <img id="blurbIcon" src="../images/iconEnhance.svg" alt="" class="blurbIcon">
+                        <div class="blurbTitleGroup">
+                            <span class="blurbTag" id="blurbTag">ENHANCE</span>
+                            <h2 class="blurbHeading" id="blurbHeading">USER EXPERIENCE</h2>
+                        </div>
+                    </div>
+                    
+                    <div class="blurbContent" id="blurbBody">
+                        <p>Our digital air machines have a user-friendly interface that simplifies the tire calibration process so customers get precise & speedy tire calibration every time.</p>
+                    </div>
+
+                    <div class="optionalTag" id="optionalNote" style="display: none;">
+                        *Optional Feature
+                    </div>
+                </aside>
+
+            </section>
+        </div>
+
+        <!-- Persistent Navigation Footer -->
+        <footer class="navFooter">
+            <button type="button" class="navBtn" onclick="history.back()">
+                <img src="../images/iconBack.svg" alt="Back" class="navIcon">
+                <span>Back</span>
+            </button>
+
+            <a href="../index.html" class="navBtn">
+                <img src="../images/iconHome.svg" alt="Home" class="navIcon">
+                <span>HOME</span>
+            </a>
+        </footer>
+
+    </main>
+
+    <script src="../js/productDetail.js"></script>
+</body>
+</html>

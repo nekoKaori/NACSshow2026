@@ -1,0 +1,214 @@
+/* Header Bar */
+.productHeader {
+    width: 100%;
+    height: 94px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 32px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+
+.headerLogo .brandLogoSmall {
+    height: 52px;
+    width: auto;
+    display: block;
+}
+
+.headerTitle {
+    text-align: right;
+}
+
+.headerTitle h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    color: #1a2b3c;
+    margin: 0;
+    line-height: 1.1;
+}
+
+.headerTitle p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #0d5c9e;
+    margin: 4px 0 0 0;
+}
+
+/* Blue Stage Area */
+.productStage {
+    flex: 1;
+    background: linear-gradient(180deg, #1b6da5 0%, #155582 100%);
+    padding: 24px 32px;
+    display: grid;
+    grid-template-columns: 280px 1fr 330px;
+    gap: 24px;
+    align-items: center;
+    box-sizing: border-box;
+    min-height: 0;
+}
+
+/* ---------------- Left Navigation Column ---------------- */
+.featureNav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    height: 100%;
+}
+
+.featureBtn {
+    width: 100%;
+    height: 48px;
+    background: linear-gradient(180deg, #245e88 0%, #164363 100%);
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+    cursor: pointer;
+    text-align: left;
+    padding-left: 18px;
+    transition: all 0.2s ease;
+    -webkit-tap-highlight-color: transparent;
+    box-sizing: border-box;
+}
+
+/* Active Highlight with #51c8ee Glow */
+.featureBtn.active {
+    background: linear-gradient(180deg, #0d3858 0%, #062238 100%);
+    border-color: #51c8ee;
+    box-shadow: 0 0 14px #51c8ee, inset 0 0 4px #51c8ee;
+    color: #ffffff;
+}
+
+/* ---------------- Center Equipment Stage ---------------- */
+.machineDisplayArea {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 0;
+}
+
+.machineDisplayArea img {
+    max-width: 100%;
+    max-height: 520px;
+    object-fit: contain;
+    transition: opacity 0.15s ease-in-out;
+}
+
+/* ---------------- Right Blurb Card ---------------- */
+.blurbCard {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    min-height: 320px;
+    border-top: 4px solid #0d5c9e;
+}
+
+.blurbHeader {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.blurbIcon {
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.blurbTitleGroup {
+    display: flex;
+    flex-direction: column;
+}
+
+.blurbTag {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 800;
+    color: #0d5c9e;
+    letter-spacing: 1px;
+}
+
+.blurbHeading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    color: #093b66;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.blurbContent p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #333333;
+    margin: 0 0 12px 0;
+}
+
+/* Price Display Styling */
+.priceBox {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.priceRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 8px 12px;
+    background-color: #f4f6f8;
+    border-radius: 6px;
+}
+
+.priceLabel {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: #555555;
+}
+
+.priceVal {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    color: #093b66;
+}
+
+.priceVal.highlight {
+    color: #0e8436;
+    font-size: 24px;
+}
+
+/* Optional Feature Footnote Badge */
+.optionalTag {
+    margin-top: auto;
+    background-color: #dcddde;
+    color: #333333;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 8px 12px;
+    border-radius: 6px;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
