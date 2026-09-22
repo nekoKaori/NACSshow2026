@@ -60,7 +60,7 @@ window.productData = {
         icon: '../images/iconCustom.svg',
         tag: 'COLOR',
         heading: 'OPTIONS',
-        body: '<p>Choose from four vibrant standard finishes (red, yellow, blue, or green), or personalize your equipment with custom-branded decals featuring your company logo.</p>',
+        body: '<p>Choose from four vibrant standard color choices (red, yellow, blue, or green), or personalize your equipment with custom-branded decals featuring your company logo.</p>',
         optional: false
     },
     showPrice: {
