@@ -41,7 +41,7 @@
 /* Blue Stage Area */
 .productStage {
     flex: 1;
-    background: linear-gradient(180deg, #1b6da5 0%, #155582 100%);
+    background: linear-gradient(180deg, #1f64ad 0%, #1b568e 100%);
     padding: 24px 32px;
     display: grid;
     grid-template-columns: 280px 1fr 330px;
@@ -51,7 +51,7 @@
     min-height: 0;
 }
 
-/* ---------------- Left Navigation Column ---------------- */
+/* Left Navigation Column */
 .featureNav {
     display: flex;
     flex-direction: column;
@@ -63,7 +63,7 @@
 .featureBtn {
     width: 100%;
     height: 48px;
-    background: linear-gradient(180deg, #245e88 0%, #164363 100%);
+    background: linear-gradient(180deg, #1f64ad 0%, #1b568e 100%);
     color: #ffffff;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
@@ -88,7 +88,7 @@
     color: #ffffff;
 }
 
-/* ---------------- Center Equipment Stage ---------------- */
+/*  Center Equipment Stage  */
 .machineDisplayArea {
     width: 100%;
     height: 100%;
@@ -105,7 +105,7 @@
     transition: opacity 0.15s ease-in-out;
 }
 
-/* ---------------- Right Blurb Card ---------------- */
+/* Right Blurb Card */
 .blurbCard {
     background-color: #ffffff;
     border-radius: 12px;
@@ -136,13 +136,14 @@
 .blurbTitleGroup {
     display: flex;
     flex-direction: column;
+    gap: 2px;
 }
 
 .blurbTag {
     font-family: 'Montserrat', sans-serif;
-    font-size: 13px;
+    font-size: 20px;
     font-weight: 800;
-    color: #0d5c9e;
+    color: #6d6e70;
     letter-spacing: 1px;
 }
 
@@ -150,16 +151,16 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     font-weight: 800;
-    color: #093b66;
+    color: #1f63ad;
     margin: 0;
     line-height: 1.2;
 }
 
 .blurbContent p {
     font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
+    font-size: 18px;
     line-height: 1.5;
-    color: #333333;
+    color: #6d6e70;
     margin: 0 0 12px 0;
 }
 
@@ -184,18 +185,18 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 13px;
     font-weight: 700;
-    color: #555555;
+    color: #6d6e70;
 }
 
 .priceVal {
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     font-weight: 800;
-    color: #093b66;
+    color: #1f63ad;
 }
 
 .priceVal.highlight {
-    color: #0e8436;
+    color: #00834c;
     font-size: 24px;
 }
 
@@ -203,7 +204,7 @@
 .optionalTag {
     margin-top: auto;
     background-color: #dcddde;
-    color: #333333;
+    color: #0a2b47;
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
     font-weight: 700;
