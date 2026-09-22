@@ -1,22 +1,22 @@
 window.productData = {
     digitalAir: {
-        image: '../images/productSCWM23Free.png',
+        image: '../images/productSC05SSFree.png',
         icon: '../images/iconUserExperience.svg',
         tag: 'ENHANCE',
         heading: 'USER EXPERIENCE',
         body: '<p>Our digital air machines have a user-friendly interface that simplifies the tire calibration process so customers get precise & speedy tire calibration every time.</p>',
         optional: false
     },
-    smallerFootprint: {
-        image: '../images/productSCWM23Free.png',
-        icon: '../images/iconSmallerFootprint.svg',
-        tag: 'SMALLER',
-        heading: 'FOOTPRINT',
-        body: '<p>Space saving design can be installed anywhere an electrical outlet and wall are available. This product is intended for outdoor use only.</p>',
-        optional: false
+    LEDSign: {
+        image: '../images/productSC05SSFree.png',
+        icon: '../images/iconLight.svg',
+        tag: 'ILLUMINATED',
+        heading: 'LED SIGN',
+        body: '<p>Enhance visibility and brand recognition with our illuminated LED sign, ensuring your air machine stands out even in low-light conditions.</p>',
+        optional: true
     },
     stainlessSteel: {
-        image: '../images/productSCWM23Free.png',
+        image: '../images/productSC05SSFree.png',
         icon: '../images/iconStainlessSteel.svg',
         tag: 'STAINLESS',            
         heading: 'STEEL',
@@ -24,7 +24,7 @@ window.productData = {
         optional: false
     },
     wirelessMonitoring: {
-        image: '../images/productSCWM23Pay.png',
+        image: '../images/productSC05SSPay.png',
         icon: '../images/iconWireless.svg',
         tag: 'WIRELESS',
         heading: 'MONITORING',
@@ -32,15 +32,23 @@ window.productData = {
         optional: true
     },
     cashlessPayments: {
-        image: '../images/productSCWM23Pay.png',
+        image: '../images/productSC05SSPay.png',
         icon: '../images/iconCashlessPay.svg',
         tag: 'CASHLESS',
         heading: 'PAYMENTS',
         body: '<p>Cashless payments offer customers a simple, efficient & convenient way to pay. Our machines support over 60 forms of payment.</p>',
         optional: true
     },
+    vac: {
+        image: '../images/productSC05SSVac.png',
+        icon: '../images/iconVac.svg',
+        tag: 'VACUUM',
+        heading: 'ATTACHMENT',
+        body: '<p>Offer more services to your customers by combining both the digital air machine and vacuum attachment into one product.</p>',
+        optional: true
+    },
     heater: {
-        image: '../images/productSCWM23Free.png',
+        image: '../images/productSC05SSFree.png',
         icon: '../images/iconHeater.svg',
         tag: 'INTERNAL',
         heading: 'HEATER',
@@ -48,7 +56,7 @@ window.productData = {
         optional: true
     },
     water: {
-        image: '../images/productSCWM23Water.png',
+        image: '../images/productSC05SSWater.png',
         icon: '../images/iconWater.svg',
         tag: 'INTEGRATED',
         heading: 'WATER',
@@ -56,7 +64,7 @@ window.productData = {
         optional: true
     },
     colorOptions: {
-        image: '../images/productSCWM23Colors.png',
+        image: '../images/productSC05SSColors.png',
         icon: '../images/iconCustom.svg',
         tag: 'COLOR',
         heading: 'OPTIONS',
@@ -64,7 +72,7 @@ window.productData = {
         optional: false
     },
     showPrice: {
-        image: '../images/productSCWM23Free.png',
+        image: '../images/productSC05SSFree.png',
         icon: '../images/iconPrice.svg',
         tag: 'EQUIPMENT',
         heading: 'PRICING',
