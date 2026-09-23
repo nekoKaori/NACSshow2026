@@ -69,6 +69,27 @@
     align-items: stretch;
 }
 
+/* 3-Column stage modifier */
+.cardStage.threeColStage {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 36px;
+    padding: 24px 30px;
+}
+
+/* Retain exact original 4-card size and image proportions */
+.cardStage.threeColStage .machineCard {
+    width: 300px;
+    flex: 0 0 300px;
+}
+
+.cardStage.threeColStage .machineImgWrap img {
+    max-height: 380px;
+    max-width: 90%;
+    object-fit: contain;
+}
+
 .machineCard {
     background-color: white;
     border-radius: 13px;
@@ -251,4 +272,14 @@
     object-fit: contain;
     /* Uncomment below if your exported SVG is black and needs to be white */
     /* filter: brightness(0) invert(1); */
+}
+
+/* Center and constrain the 3-column matrix so it matches the card width */
+.threeColTableStage .specMatrix {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.threeColTableStage .specMatrix .colFeature {
+    width: 24%; /* Gives the feature labels more balanced breathing room */
 }
