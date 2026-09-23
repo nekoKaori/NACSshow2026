@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Customer Testimonials - Car Wash</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/testimonials.css">
+</head>
+
+<body>
+    <main class="presentationFrame">
+        
+        <!-- Header (94px) -->
+        <header class="testimonialHeader">
+            <div class="headerLogo">
+                <img src="../images/logoETG.svg" alt="Excel Tire Gauge Logo" class="brandLogoSmall">
+            </div>
+            <div class="headerTitle">
+                <h1>Customer Testimonials</h1>
+            </div>
+        </header>
+
+        <!-- Stage Frame (16px Top/Bottom Margins) -->
+        <div class="stageWrapper">
+            <section class="testimonialStage">
+                
+                <!-- Left Column: Testimonial Selectors -->
+                <nav class="authorNav" aria-label="Customer Testimonials">
+                    <button type="button" class="authorBtn active" data-quote="person1">
+                        <span class="btnName">Jonathan Ketchum</span>
+                        <span class="btnCompany">Haffner’s/Energy North</span>
+                    </button>
+                    <button type="button" class="authorBtn" data-quote="person2">
+                        <span class="btnName">Kevin Platt</span>
+                        <span class="btnCompany">Noria Energy</span>
+                    </button>
+                    <button type="button" class="authorBtn" data-quote="person3">
+                        <span class="btnName">Maddi Arrowood</span>
+                        <span class="btnCompany">Hi Market</span>
+                    </button>
+                </nav>
+
+                <!-- Right Column: White Testimonial Card -->
+                <article class="quoteCard">
+                    <div class="quoteRating">
+                        <img src="../images/icon5Stars.svg" alt="5 Stars">
+                    </div>
+                    
+                    <div class="quoteBody" id="quoteText">
+                        <p>“Haffner’s/Energy North has been using Excel Tire Gauge’s Air Machines for many years. We have found them to be <strong>extremely durable (especially in harsh New England winters)</strong>, user friendly, and an excellent source of revenue for our company. Excel Tire Gauge has shown that not only do they made an outstanding product but they stand behind it every step of the way!!”</p>
+                    </div>
+
+                    <div class="quoteDivider"></div>
+
+                    <footer class="quoteFooter">
+                        <span class="authorName" id="authorName">Jonathan Ketchum</span>
+                        <span class="authorTitle" id="authorTitle">Chief Retail Officer, Haffner’s/Energy North</span>
+                    </footer>
+                </article>
+
+            </section>
+        </div>
+
+        <!-- Persistent Navigation Footer -->
+        <footer class="navFooter">
+            <button type="button" class="navBtn" onclick="history.back()">
+                <img src="../images/iconBack.svg" alt="Back" class="navIcon">
+                <span>Back</span>
+            </button>
+
+            <a href="../index.html" class="navBtn">
+                <img src="../images/iconHome.svg" alt="Home" class="navIcon">
+                <span>HOME</span>
+            </a>
+        </footer>
+
+    </main>
+
+    <!-- Data and Controller Scripts -->
+    <script src="../js/testimonialsGasData.js"></script>
+    <script src="../js/testimonials.js"></script>
+</body>
+</html>

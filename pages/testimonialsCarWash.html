@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Customer Testimonials - Car Wash</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/testimonials.css">
+</head>
+
+<body>
+    <main class="presentationFrame">
+        
+        <!-- Header (94px) -->
+        <header class="testimonialHeader">
+            <div class="headerLogo">
+                <img src="../images/logoETG.svg" alt="Excel Tire Gauge Logo" class="brandLogoSmall">
+            </div>
+            <div class="headerTitle">
+                <h1>Customer Testimonials</h1>
+            </div>
+        </header>
+
+        <!-- Stage Frame (16px Top/Bottom Margins) -->
+        <div class="stageWrapper">
+            <section class="testimonialStage">
+                
+                <!-- Left Column: Testimonial Selectors -->
+                <nav class="authorNav" aria-label="Customer Testimonials">
+                    <button type="button" class="authorBtn active" data-quote="person1">
+                        <span class="btnName">Brett Sullivan</span>
+                        <span class="btnCompany">Splash Car Wash Northeast</span>
+                    </button>
+                    <button type="button" class="authorBtn" data-quote="person2">
+                        <span class="btnName">Kyle Linsner</span>
+                        <span class="btnCompany">Tsunami Express Car Wash</span>
+                    </button>
+                    <button type="button" class="authorBtn" data-quote="person3">
+                        <span class="btnName">Matt Bruggeman</span>
+                        <span class="btnCompany">Summit Wash Holdings</span>
+                    </button>
+                </nav>
+
+                <!-- Right Column: White Testimonial Card -->
+                <article class="quoteCard">
+                    <div class="quoteRating">
+                        <img src="../images/icon5Stars.svg" alt="5 Stars">
+                    </div>
+                    
+                    <div class="quoteBody" id="quoteText">
+                        <p>“Over the past 3.5 years, we've relied on Excel Tire Gauge and their PNT4 B Model across our locations, and the performance has been consistently strong. Today, we operate <strong>more than 120 units</strong> throughout our car washes, and they've proven to be <strong>dependable, easy to maintain</strong>, and well-suited for high-traffic environments. It's been a great partnership, and their equipment continues to meet the demands of our business.”</p>
+                    </div>
+
+                    <div class="quoteDivider"></div>
+
+                    <footer class="quoteFooter">
+                        <span class="authorName" id="authorName">Brett Sullivan</span>
+                        <span class="authorTitle" id="authorTitle">Manager, Splash Car Wash Northeast</span>
+                    </footer>
+                </article>
+
+            </section>
+        </div>
+
+        <!-- Persistent Navigation Footer -->
+        <footer class="navFooter">
+            <button type="button" class="navBtn" onclick="history.back()">
+                <img src="../images/iconBack.svg" alt="Back" class="navIcon">
+                <span>Back</span>
+            </button>
+
+            <a href="../index.html" class="navBtn">
+                <img src="../images/iconHome.svg" alt="Home" class="navIcon">
+                <span>HOME</span>
+            </a>
+        </footer>
+
+    </main>
+
+    <!-- Data and Controller Scripts -->
+    <script src="../js/testimonialsCarWashData.js"></script>
+    <script src="../js/testimonials.js"></script>
+</body>
+</html>

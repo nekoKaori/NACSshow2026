@@ -1,0 +1,177 @@
+/* Header (Exact 94px brand header) */
+.testimonialHeader {
+    width: 100%;
+    height: 94px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 32px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+
+.headerLogo .brandLogoSmall {
+    height: 52px;
+    width: auto;
+    display: block;
+}
+
+.headerTitle h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    color: #0b2e47;
+    margin: 0;
+    line-height: 1.1;
+    text-align: right;
+}
+
+/* Stage Area (16px top/bottom white margins inherited from .stageWrapper) */
+.testimonialStage {
+    flex: 1;
+    background: linear-gradient(180deg, #1f64ad 0%, #1b568e 100%);
+    padding: 36px 48px;
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 48px;
+    align-items: center;
+    box-sizing: border-box;
+    min-height: 0;
+}
+
+/* Left Buttons Column */
+.authorNav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+}
+
+.authorBtn {
+    width: 100%;
+    height: 78px;
+    background: linear-gradient(180deg, #1f64ad 0%, #1b568e 100%);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+    cursor: pointer;
+    text-align: left;
+    padding: 14px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 0.2s ease;
+    -webkit-tap-highlight-color: transparent;
+    box-sizing: border-box;
+}
+
+.authorBtn .btnName {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1.2;
+}
+
+.authorBtn .btnCompany {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.85);
+    margin-top: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Active Highlight with #51c8ee Glow */
+.authorBtn.active {
+    background: linear-gradient(180deg, #0d3858 0%, #062238 100%);
+    border-color: #51c8ee;
+    box-shadow: 0 0 14px #51c8ee, inset 0 0 4px #51c8ee;
+}
+
+.authorBtn.active .btnName {
+    color: #ffffff;
+}
+
+.authorBtn.active .btnCompany {
+    color: #51c8ee;
+}
+
+/* Right Testimonial Card */
+.quoteCard {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 36px 40px;
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    min-height: 440px;
+    max-height: 520px;
+}
+
+/* 5-Star SVG Rating */
+.quoteRating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.quoteRating img {
+    height: 38px;
+    width: auto;
+    display: block;
+}
+
+/* Quote Text Body */
+.quoteBody {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.quoteBody p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 19px;
+    line-height: 1.6;
+    color: #1a2b3c;
+    margin: 0;
+}
+
+.quoteBody p strong {
+    font-weight: 800;
+    color: #0b2e47;
+}
+
+/* Divider Line */
+.quoteDivider {
+    width: 140px;
+    height: 2px;
+    background-color: #d1d5db;
+    margin: 24px 0 16px 0;
+}
+
+/* Author Signoff */
+.quoteFooter {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.authorName {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    color: #0b2e47;
+}
+
+.authorTitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #6d6e70;
+}
