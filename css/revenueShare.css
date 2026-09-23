@@ -1,0 +1,142 @@
+/* Presentation Frame Vertical Flow */
+.presentationFrame {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* 1. AirExcel Header (132px absorbs vertical space) */
+.aeHeader {
+    width: 100%;
+    height: 132px;
+    min-height: 132px;
+    max-height: 132px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
+.aeHeaderLeft {
+    display: flex;
+    align-items: center;
+}
+
+.aeBrandLogo {
+    height: 60px;
+    width: auto;
+    display: block;
+}
+
+.aeHeaderRight {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.aeTitleGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.aeTitleLine {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: Bold;
+    color: #0a2b47;
+    line-height: 1.15;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+
+/* 2. Sub-Navigation Strip (16px gap above) */
+.revNavStrip {
+    width: 100%;
+    height: 52px;
+    min-height: 52px;
+    max-height: 52px;
+    margin-top: 16px;
+    background-color: #dcddde;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    padding: 0 24px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
+/* Tab Buttons */
+.tabBtn {
+    flex: 1;
+    height: 38px;
+    border-radius: 6px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.4px;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+
+    background-color: #0a2b47;
+    color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.tabBtn.active {
+    background-color: #61ce70;
+    color: #0a2b47;
+    border: 1px solid #4eb85d;
+    box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.4), 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* 3. Stage Container (520px image + 16px top + 16px bottom) */
+.revStage {
+    width: 100%;
+    height: 520px;
+    min-height: 520px;
+    max-height: 520px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+.revStage img {
+    height: 520px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+/* 4. Footer (Flush 68px) */
+.navFooter {
+    width: 100% !important;
+    height: 68px !important;
+    min-height: 68px !important;
+    max-height: 68px !important;
+    margin-top: 0 !important;
+    flex-shrink: 0 !important;
+    box-sizing: border-box !important;
+}
