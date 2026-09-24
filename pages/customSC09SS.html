@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Excel Tire Gauge">
+    <title>SC09-SS Custom Decals</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/customDecals.css">
+</head>
+
+<body>
+    <main class="presentationFrame">
+
+        <!-- Header -->
+        <header class="decalHeader">
+            <div class="headerLogo">
+                <img src="../images/logoETG.svg" alt="Excel Tire Gauge Logo" class="brandLogoSmall">
+            </div>
+            <div class="headerTitle">
+                <h1>SC09-SS</h1>
+                <p>Custom Decals</p>
+            </div>
+        </header>
+
+        <!-- Full-Width Control Bar (#dcddde) -->
+        <section class="decalFullBar">
+            <div class="decalRow">
+                <span class="rowTitle">SETUPS:</span>
+                <div class="pillContainer" id="setupPills"></div>
+            </div>
+            <div class="decalRow">
+                <span class="rowTitle">CLIENTS:</span>
+                <div class="pillContainer" id="clientPills"></div>
+            </div>
+        </section>
+
+        <!-- White Slide Showcase Area -->
+        <div class="stageWrapper decalStageWrapper">
+            <div class="slideViewerCard" id="slideViewerCard">
+                <div class="slideImageContainer">
+                    <img id="activeSlideImg" src="" alt="Custom Decal Presentation">
+                </div>
+                
+                <button type="button" class="zoomToggleBtn" id="zoomToggleBtn" aria-label="Toggle Fullscreen">
+                    <svg class="zoomIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <polyline points="9 21 3 21 3 15"></polyline>
+                        <line x1="21" y1="3" x2="14" y2="10"></line>
+                        <line x1="3" y1="21" x2="10" y2="14"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Persistent Navigation Footer -->
+        <footer class="navFooter">
+            <button type="button" class="navBtn" onclick="history.back()">
+                <img src="../images/iconBack.svg" alt="Back" class="navIcon">
+                <span>Back</span>
+            </button>
+
+            <a href="../index.html" class="navBtn">
+                <img src="../images/iconHome.svg" alt="Home" class="navIcon">
+                <span>HOME</span>
+            </a>
+        </footer>
+
+        <!-- Fullscreen Overlay Modal -->
+        <div class="lightboxOverlay" id="lightboxModal">
+            <button type="button" class="lightboxCloseBtn" id="lightboxCloseBtn" aria-label="Close fullscreen">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <img id="lightboxImg" src="" alt="Enlarged Custom Decal">
+        </div>
+
+    </main>
+
+    <script src="../js/customSC09.js"></script>
+</body>
+</html>

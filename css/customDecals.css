@@ -1,0 +1,236 @@
+.decalHeader {
+    width: 100%;
+    height: 94px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 32px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+
+.decalHeader .brandLogoSmall {
+    height: 52px;
+    width: auto;
+    max-width: 220px;
+    display: block;
+    object-fit: contain;
+}
+
+.decalHeader .headerTitle {
+    text-align: right;
+}
+
+.decalHeader .headerTitle h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    color: #1a2b3c;
+    margin: 0;
+    line-height: 1.1;
+}
+
+.decalHeader .headerTitle p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #0d5c9e;
+    margin: 3px 0 0 0;
+}
+
+/* Full-Width Filter Bar across the screen */
+.decalFullBar {
+    width: 100%;
+    background-color: #dcddde;
+    padding: 10px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+
+.decalRow {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.rowTitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 800;
+    color: #0b2e47;
+    letter-spacing: 0.8px;
+    width: 74px;
+    flex-shrink: 0;
+}
+
+.pillContainer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    padding: 2px 0;
+}
+
+.pillContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.decalPillBtn {
+    background: linear-gradient(180deg, #1f64ad 0%, #1b568e 100%);
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+    padding: 6px 14px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.2s ease;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.decalPillBtn.active {
+    background: linear-gradient(180deg, #0d3858 0%, #062238 100%);
+    border-color: #51c8ee;
+    box-shadow: 0 0 12px #51c8ee, inset 0 0 3px #51c8ee;
+    color: #ffffff;
+}
+
+.pillCount {
+    font-size: 11px;
+    opacity: 0.85;
+    margin-left: 4px;
+}
+
+/* White Stage Wrapper */
+.decalStageWrapper {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 12px 32px;
+    display: flex;
+    box-sizing: border-box;
+    min-height: 0;
+}
+
+/* Center Showcase Card */
+.slideViewerCard {
+    flex: 1;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #dce0e5;
+    box-shadow: 0 4px 16px rgba(11, 46, 71, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    min-height: 0;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.slideImageContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slideImageContainer img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 4px;
+    transition: opacity 0.1s ease-in-out;
+}
+
+/* Expand Corner Icon Button */
+.zoomToggleBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 38px;
+    height: 38px;
+    background: rgba(10, 43, 71, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 8px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+    transition: transform 0.2s ease;
+}
+
+.zoomToggleBtn:active {
+    transform: scale(0.92);
+}
+
+.zoomIcon {
+    width: 20px;
+    height: 20px;
+}
+
+/* Fullscreen Lightbox */
+.lightboxOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.94);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    box-sizing: border-box;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+}
+
+.lightboxOverlay.open {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.lightboxOverlay img {
+    max-width: 95%;
+    max-height: 95%;
+    object-fit: contain;
+    border-radius: 4px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+}
+
+.lightboxCloseBtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 48px;
+    height: 48px;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1.5px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.lightboxCloseBtn svg {
+    width: 26px;
+    height: 26px;
+}
