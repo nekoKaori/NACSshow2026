@@ -213,3 +213,33 @@
     text-align: center;
     letter-spacing: 0.5px;
 }
+/* Call-to-action button inside Blurb Card */
+.blurbActionBtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 14px;
+    padding: 10px 18px;
+    background: linear-gradient(180deg, #1f64ad 0%, #1b568e 100%);
+    color: #ffffff !important;
+    text-decoration: none !important;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.blurbActionBtn:active {
+    transform: scale(0.97);
+    box-shadow: 0 0 10px #51c8ee;
+}
+
+.blurbActionBtn svg {
+    width: 16px;
+    height: 16px;
+}

@@ -63,12 +63,20 @@ window.productData = {
         body: '<p>Direct fluid line hookup expands your station beyond tire care—delivering reliable air inflation plus on-demand fluid dispensing.</p>',
         optional: true
     },
-    colorOptions: {
-        image: '../images/productSC05SSColors.png',
+   colorOptions: {
+        image: '../images/productSC05SSColors.png', // adjust to your actual SC05 color image path if different
         icon: '../images/iconCustom.svg',
         tag: 'COLOR',
         heading: 'OPTIONS',
-        body: '<p>Choose from four vibrant standard color choices (red, yellow, blue, or green), or personalize your equipment with custom-branded decals featuring your company logo.</p>',
+        body: `
+            <p>Choose from vibrant standard color options, or personalize your equipment with custom-branded decals featuring your company logo.</p>
+            <a href="customSC05SS.html" class="blurbActionBtn">
+               <span>View Custom Decals</span>
+               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                   <polyline points="9 18 15 12 9 6"></polyline>
+               </svg>
+            </a>
+        `,
         optional: false
     },
     showPrice: {
