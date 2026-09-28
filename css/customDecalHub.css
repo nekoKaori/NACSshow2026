@@ -1,0 +1,132 @@
+/* ==========================================================================
+   Custom Decals Hub Page Layout (Static 3-Column Display)
+   Locked Landscape 1180x820 / iPad 10th Gen Kiosk
+   ========================================================================== */
+
+/* --- TOP HEADER (Self-contained, identical to equipmentSlider.css) --- */
+.equipHeader {
+    width: 100%;
+    height: 94px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 32px;
+    border-bottom: none;
+    flex-shrink: 0;
+}
+
+.brandLogoSmall {
+    height: 56px;
+    width: auto;
+    object-fit: contain;
+}
+
+.equipTitle {
+    text-align: right;
+}
+
+.equipTitle h1 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #0b2e47;
+    line-height: 1.2;
+}
+
+.equipTitle p {
+    font-size: 18px;
+    color: #1f63ad;
+    font-weight: bold;
+    margin-top: 3px;
+}
+
+/* --- STAGE WRAPPER & GRAY CARD STAGE --- */
+.stageWrapper.decalStageWrapper {
+    flex: 1;
+    background-color: white; /* White framing bands top and bottom matching styles.css */
+    padding: 16px 0;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.cardStage.threeColStage {
+    flex: 1;
+    background-color: #b4b4b4;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 36px;
+    padding: 24px 30px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* --- 3 INDIVIDUAL MACHINE CARDS (Matches Car Wash Card Specs) --- */
+.cardStage.threeColStage .machineCard {
+    width: 300px;
+    flex: 0 0 300px;
+    background-color: white;
+    border-radius: 13px;
+    box-shadow: 0 10px 20px rgba(11, 46, 71, 0.22);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    padding: 18px 12px;
+    transition: transform 0.2s ease;
+    -webkit-tap-highlight-color: transparent;
+    box-sizing: border-box;
+}
+
+.cardStage.threeColStage .machineCard:active {
+    transform: scale(0.97);
+}
+
+.machineImgWrap {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 0;
+}
+
+.machineImgWrap img {
+    max-height: 380px;
+    max-width: 90%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+/* --- BADGES & SUBTITLES --- */
+.machineMeta {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.machineBadge {
+    border: 2px solid #0b2e47;
+    border-radius: 7px;
+    color: #0b2e47;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 14px;
+    margin-bottom: 6px;
+    text-align: center;
+}
+
+.machineSub {
+    font-size: 15px;
+    font-weight: bold;
+    color: #4e4f4f;
+    text-align: center;
+}
