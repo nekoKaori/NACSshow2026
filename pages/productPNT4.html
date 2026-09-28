@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Excel Tire Gauge">
+    <title>PNT 4 Wall Mount</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/productDetail.css">
+</head>
+
+<body>
+    <main class="presentationFrame">
+        
+        <!-- Header (Permanent 94px) -->
+        <header class="productHeader">
+            <div class="headerLogo">
+                <img src="../images/logoETG.svg" alt="Excel Tire Gauge Logo" class="brandLogoSmall">
+            </div>
+            <div class="headerTitle">
+                <h1>PNT 4</h1>
+                <p>Digital Tire Inflator</p>
+            </div>
+        </header>
+
+        <!-- Stage Frame with 16px Top/Bottom Margins -->
+        <div class="stageWrapper">
+            <section class="productStage">
+                
+                <!-- Left Column: Feature Buttons -->
+                <nav class="featureNav" aria-label="Product Features">
+                    <button type="button" class="featureBtn active" data-feature="digitalAir">
+                        DIGITAL AIR MACHINE
+                    </button>
+                    <button type="button" class="featureBtn" data-feature="weatherResistant">
+                        WEATHER RESISTANT
+                    </button>
+                    <button type="button" class="featureBtn" data-feature="compressorReady">
+                        COMPRESSOR READY
+                    </button>
+                    <button type="button" class="featureBtn" data-feature="airNitrogen">
+                        AIR & NITROGEN
+                    </button>
+                    <button type="button" class="featureBtn" data-feature="accessories">
+                        ACCESSORIES
+                    </button>
+                    <button type="button" class="featureBtn" data-feature="safeCalibration">
+                        SAFE CALIBRATION
+                    </button>
+                    <button type="button" class="featureBtn" data-feature="easyInstallation">
+                        EASY INSTALLATION
+                    </button>
+                </nav>
+
+                <!-- Center Column: Dynamic Machine Display -->
+                <div class="machineDisplayArea">
+                    <img id="mainMachineImg" 
+                         src="../images/productPNT4.png" 
+                         alt="PNT 4 Digital Tire Inflator">
+                </div>
+
+                <!-- Right Column: Dynamic Blurb Card -->
+                <aside class="blurbCard" id="blurbCard">
+                    <div class="blurbHeader">
+                        <img id="blurbIcon" src="../images/iconUserExperience.svg" alt="" class="blurbIcon">
+                        <div class="blurbTitleGroup">
+                            <span class="blurbTag" id="blurbTag">ENHANCE</span>
+                            <h2 class="blurbHeading" id="blurbHeading">USER EXPERIENCE</h2>
+                        </div>
+                    </div>
+                    
+                    <div class="blurbContent" id="blurbBody">
+                        <p>This convenient and easy-to-use air machine simplifies the tire calibration process for properly calibrated tires every time.</p>
+                    </div>
+
+                    <div class="optionalTag" id="optionalNote" style="display: none;">
+                        *Optional Feature
+                    </div>
+                </aside>
+
+            </section>
+        </div>
+
+        <!-- Persistent Navigation Footer -->
+        <footer class="navFooter">
+            <button type="button" class="navBtn" id="backBtn" onclick="history.back()">
+                <img src="../images/iconBack.svg" alt="Back" class="navIcon">
+                <span>Back</span>
+            </button>
+
+            <a href="../index.html" class="navBtn">
+                <img src="../images/iconHome.svg" alt="Home" class="navIcon">
+                <span>HOME</span>
+            </a>
+        </footer>
+
+    </main>
+    <script src="../js/PNT4.js"></script>
+    <script src="../js/productDetail.js"></script>
+</body>
+</html>

@@ -88,11 +88,11 @@ window.productData = {
             <div class="priceBox">
                 <div class="priceRow">
                     <span class="priceLabel">Regular Price:</span>
-                    <span class="priceVal">$X,XXX</span>
+                    <span class="priceVal">$3,190</span>
                 </div>
                 <div class="priceRow">
                     <span class="priceLabel">Show Special Price:</span>
-                    <span class="priceVal highlight">$X,XXX</span>
+                    <span class="priceVal highlight">$2,890</span>
                 </div>
             </div>
         `,
